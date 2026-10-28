@@ -1,0 +1,203 @@
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #00bfa5;
+}
+
+/* Main content */
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Home section */
+#home {
+  text-align: center;
+  background-color: white;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* Portfolio layout */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual project cards */
+.portfolio-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+/* Project images */
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footer */
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+  padding-top: 5em;
+}
+
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/* Home Section */
+#home h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#home p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.portfolio-item h3 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.portfolio-item p {
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+.portfolio-item img {
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+#footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
